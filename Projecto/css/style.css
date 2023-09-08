@@ -66,14 +66,6 @@ form {
   padding: 5px;
 }
 
-input {
-  width: 100%;
-}
-
-textarea {
-  width: 100%;
-}
-
 input::placeholder {
   font-style: italic;
   color: thistle;
@@ -92,6 +84,19 @@ input::placeholder {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
 img {
   width: 30%;
 }
@@ -102,16 +107,10 @@ img {
   padding-bottom: 2vw;
 }
 
-hr {
-  margin-left: 50%;
-  margin-right: 50%;
-}
-
 .texto {
   text-align: center;
   margin-left: 500px;
   margin-right: 500px;
 }
-
 
 
