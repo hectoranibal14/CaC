@@ -40,13 +40,15 @@ footer{
   width: 100%;
   text-align: center;
   color: white;
-  padding: 20px;
+  padding: 20px 0 20px 0;
 }
 
 #copyRight {
   background-color: rgb(99, 93, 87); 
   text-align: center; 
   color: white;
+  width: 100%;
+  bottom: 0;
 }
 
 .formulario {
@@ -64,6 +66,14 @@ form {
   padding: 5px;
 }
 
+input {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
 input::placeholder {
   font-style: italic;
   color: thistle;
@@ -71,10 +81,11 @@ input::placeholder {
 }
 
 .submit {
-  padding: 10px;
+  padding: 5px;
   border: 1px solid gray;
   margin-right: 10px;
-  border-radius: 8px;
+  border-radius: 7px;
+  width: 50%;
 }
 
 .submit:hover {
@@ -87,13 +98,13 @@ img {
 
 .centrado {
   text-align: center;
-  padding-top: 70px;
-  padding-bottom: 40px;
+  padding-top: 5vw;
+  padding-bottom: 2vw;
 }
 
 hr {
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 50%;
+  margin-right: 50%;
 }
 
 .texto {
