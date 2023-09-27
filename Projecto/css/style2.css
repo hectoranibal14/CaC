@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+html{
+    height: 100%;
+}
+
+  
+header {
+    background-color: green;
+    color: white;
+    padding: 10px 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+
+}
+  
+  /* contenedor flex */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* centra al contenedor respecto del contenedor en el que está */
+    padding: 0 20px;
+}
+  
+.menu {
+    list-style: none;
+    display: flex; /*esto hace que los li queden horizontales */
+    margin: 0;
+    padding: 0;
+  
+}
+  
+.menu li {
+    margin-right: 50px;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+  
+.menu a:hover{
+    color: red;
+}
+  
+  /* Media query.. responsive */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .menu li {
+        margin-bottom: 10px;
+    }
+}
+  
+#foto-logo {
+    width: 20%;
+    border-radius: 10px;
+}
+  
+
+.principal {
+    padding: 4vw;
+}
+
+.seccion1{
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+.seccion2{
+    padding-top: 1vw;
+    display: flex;
+    width: 600px;
+    height: 430px;
+    margin: 0 auto;
+}
+  
+.seccion2 img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+  
+.seccion2 img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.footer {
+    width: 100% !important;
+    height: 255px !important;
+}
+
+/* formulario */
+.formulario {
+    background-color: rgba(199, 131, 14, 0.584);
+    width: 40%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    border-radius: 5px;
+}
+  
+form {
+    text-align: left;
+    justify-content: center;
+    padding: 5px;
+}
+  
+input::placeholder {
+    font-style: italic;
+    color: thistle;
+    opacity: 0.7;
+}
+  
+.submit {
+    padding: 5px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    border-radius: 7px;
+    width: 50%;
+}
+  
+.submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+  
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.centrado {
+    text-align: center;
+    padding-top: 5vw;
+    padding-bottom: 2vw;
+}

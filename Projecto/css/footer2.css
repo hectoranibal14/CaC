@@ -54,7 +54,7 @@
 }
 
 .pie-pagina .grupo1 .red-social a:hover {
-    color: red;
+    transform: scale(1.3);
 }
 
 .pie-pagina .grupo2 {
