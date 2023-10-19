@@ -9,9 +9,9 @@ html{
     height: 100%;
 }
 
-header iframe{
+.header {
     width: 100% !important;
-    height: 100% !important;
+    height: 250px !important;
     position: fixed !important;
 }
 
