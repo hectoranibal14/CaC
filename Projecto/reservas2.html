@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fetuccini</title>
         <link rel="stylesheet" href="css/style2.css">
+        <link rel="stylesheet" href="css/forms.css">
         <script src="https://kit.fontawesome.com/04195362f5.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="images/FETTUCCINEPOBLANO_300x300.ico">
 
@@ -13,18 +14,7 @@
 <body>
     
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/FETTUCCINEPOBLANO_11d6c4c6-3cdd-486e-9c66-3739272f8f31_300x300.avif" alt="Logo" id="foto-logo">
-            </div>
-            <ul class="menu">
-                <li><a href="index2.html">Inicio</a></li>
-                <li><a href="#">Nuestras especialidades</a></li>
-                <li><a href="#">Menú</a></li>
-                <li><a href="contacto copy.html">Contacto</a></li>
-                <li><a href="reservas copy.html">Reservas</a></li>
-            </ul>
-        </nav>
+        <iframe src="header.html" frameborder="0"></iframe>
     </header>
 
     <main>
@@ -37,31 +27,33 @@
                 <form>
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre y Apellido" name="Nombre" required>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nombre y Apellido" name="Nombre">
                     </div>
                     <br>
                     <div class="mb-3">
                         <label for="formGroupExampleInput2" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" name="Telefono" required>
+                        <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="Teléfono" name="Telefono">
                     </div>
                     <br>
                     <div class="mb-3">
                         <label for="formGroupExampleInput2" class="form-label">Cantidad de comensales</label>
-                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Cantidad de Comensales" name="Comensales" required>
+                        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Cantidad de Comensales" name="Comensales">
                     </div>
                     <br>
                     <div class="mb-3">
                         <label for="formGroupExampleInput2" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="formGroupExampleInput2" value="2023-08-29" min="2022-01-01" max="2023-12-31" name="Fecha" required>
+                        <input type="date" class="form-control" id="formGroupExampleInput2" value="2023-08-29" min="2022-01-01" max="2023-12-31" name="Fecha">
                     </div>
                     <br><br>
-                    <button type="submit" class="submit">Reservar</button>
+                    <button type="submit" class="submit" onclick="validarDatosReserva()">Reservar</button>
                     <br>
                     <br>
                 </form>
             </div>
         </div>
     </main>
+
+    <script src="js/formularioReserva.js"></script>
 
     <iframe src="footer2.html" class="footer" frameborder="0"></iframe>
 
