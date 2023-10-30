@@ -1,0 +1,84 @@
+/*
+.capa {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #38273b;
+    opacity: 0.7;
+}
+
+.seccion3{
+    padding-left: 2vw;
+    padding-top: 2vw;
+
+}
+
+.parrafo {
+    width: 530px;
+    height: 330px;
+    padding: 20px 20px;
+    line-height: 1.5;
+    background: rgba(199, 131, 14, 0.584);
+    box-shadow: 1px 5px 25px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    text-align: justify;
+}
+
+.parrafo img{
+    width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+}
+.parrafo img:hover{
+    cursor: crosshair;
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+*/
+
+.card {
+    /* Add shadows to create the "card" effect */
+    transition: 0.3s;
+    padding: 20px 20px;
+    background: rgba(199, 131, 14, 0.584);
+    box-shadow: 5px 10px 35px rgba(0,0,0,0.45);
+    border-radius: 5px;
+    height: 90%;
+    width: 90%;
+}
+
+.card p {
+    text-align: justify;
+}
+
+.card img{
+    width: 200px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 15px;
+    
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+
+.galeria {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-content: center;
+    justify-self: center;
+    align-self: center;
+}
